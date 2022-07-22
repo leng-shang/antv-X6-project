@@ -1,13 +1,9 @@
 import {
   HomeOutlined,
   SettingOutlined,
-  ContainerOutlined,
-  DesktopOutlined,
-  MailOutlined,
-  PieChartOutlined,
 } from '@ant-design/icons';
-import { Button, Menu } from 'antd';
-import React, { useEffect, useState } from 'react';
+import {  Menu } from 'antd';
+import React, {  useState } from 'react';
 import {useNavigate} from 'react-router-dom'
 function getItem(label, key, icon, children, type) {
   return {
@@ -36,11 +32,8 @@ const items = [
 ];
 
 const LeftMenu = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const navigate = useNavigate()
-  const toggleCollapsed = () => {
-    setCollapsed(!collapsed);
-  };
+  
   const goPage = (e)=>{
     const {key} = e
     navigate(key)
