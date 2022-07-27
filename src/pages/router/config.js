@@ -8,6 +8,10 @@ let routeConfig = [
     {
         path: '/setting',
         element: <AuthorityUser />
+    },
+    {
+        path: '/',
+        element: <Home />
     }
 ]
 export  default routeConfig
